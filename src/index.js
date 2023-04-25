@@ -8,7 +8,7 @@ const port = 3000;
 
         app.use(express.static(       
             
-                path.join(__dirname, 'public')));
+              path.join(__dirname, 'public')));
 
 // xử lý dữ liệu được gửi từ form
 app.use(
