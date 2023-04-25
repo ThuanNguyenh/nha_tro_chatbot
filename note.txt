@@ -16,7 +16,7 @@
 
 - thư viện lint-staged để chạy những command chưa được up git
 
-- thư viện husky 
+- thư viện husky tu dong chay lint-staged
 
 - chỉnh sửa file chạy theo ý muốn trong package.json
 
