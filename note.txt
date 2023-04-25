@@ -1,0 +1,28 @@
+
+
+- thư viện nodemon để tự động reload lại trang khi có sự thay đổi.
+    (nodemon.json)
+
+
+- thư viện morgan để log ra cho chúng ta biết khi reload trang web
+
+- thư viện express là mã nguồn
+
+- thư viên hbs để viết UI
+
+- thư viện sass/scss để css
+
+- thư viênj prettier để format code khi up git
+
+- thư viện lint-staged để chạy những command chưa được up git
+
+- thư viện husky 
+
+- chỉnh sửa file chạy theo ý muốn trong package.json
+
+form (method="" action="(tại trang nào)") ví dụ như chúng ta tìm kiếm sản phẩm thì 
+action sẽ chuyển đến tìm ở trang sản phẩm
+
+
+- đường đi của routes
++ đi từ src/index.js --> routes/index.js --> routes/news.js(vi du) --> NewsContreller
