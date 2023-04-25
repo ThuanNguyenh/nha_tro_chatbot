@@ -6,7 +6,9 @@ const route = require('./routes');
 const app = express();
 const port = 3000;
 
-          app.use(        express.static(path.join(__dirname, 'public')));
+        app.use(express.static(       
+            
+                path.join(__dirname, 'public')));
 
 // xử lý dữ liệu được gửi từ form
 app.use(
