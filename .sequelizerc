@@ -1,0 +1,13 @@
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('./src/app/config', 'config.json'),
+  'migrations-path': path.resolve('./src/app', 'migrations'),
+  'models-path': path.resolve('./src/app', 'models'),
+  'seeders-path': path.resolve('./src/app', 'seeders')
+}
+
+// chạy câu lệnh sau để thực thi:  node_modules/.bin/sequelize init
+
+//  npm install -g sequelize-cli   
+// npm install sequelize           

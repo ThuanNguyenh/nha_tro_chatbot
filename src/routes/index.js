@@ -1,18 +1,20 @@
 
-// import routes/news.js
-const newRouter = require('./news');
-const siteRouter = require('./site');
+
+const express = require('express');
+const siteController = require('../app/controllers/SiteController');
+const newsController = require('../app/controllers/NewsController');
 
 
-// app = express
-function route(app) {
-  
-  // news
-    app.use('/news', newRouter);
+let router = express.Router();
 
-    // home
-    app.use('/', siteRouter);
+let route = (app) => {
+  router.get('/news/:slug', newsController.show);
+  router.get('/news', newsController.index);
+  router.get('/register', siteController.register);
+  router.post('/postRegister', siteController.postRegister);
+  router.get('/', siteController.home);
 
+  return app.use("/", router);
 }
 
 module.exports = route;

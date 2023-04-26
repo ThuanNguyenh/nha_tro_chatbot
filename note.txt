@@ -20,9 +20,29 @@
 
 - chỉnh sửa file chạy theo ý muốn trong package.json
 
+- thư viện body-parser để lấy được các tham số từ phía client gửi lên
+- thư viện dotenv để lấy được giá trị các tham số ta khai báo trong file môi trường .env
+
 form (method="" action="(tại trang nào)") ví dụ như chúng ta tìm kiếm sản phẩm thì 
 action sẽ chuyển đến tìm ở trang sản phẩm
 
 
+- forder:
++ services: chọc đến database
++ config: cấu hình các tham số của dự án
+
+
+
 - đường đi của routes
 + đi từ src/index.js --> routes/index.js --> routes/news.js(vi du) --> NewsContreller
+
+
+- kết nối database - mysql:
++ install thư viện dotenv, mysql2, sequelize, sequelize-cli (dev)
++ link hướng dẫn: https://mherman.org/blog/node-postgres-sequelize/
+                    https://sequelize.org/docs/v6/other-topics/migrations/
++ tạo file .sequelizerc và chạy lệnh - node_modules/.bin/sequelize init
++ file connectDB và và import vô index.js để chạy
+
++ migrations: tự động map vào database
+
