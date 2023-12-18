@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class User extends Model {
+  class room extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,19 +13,21 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  User.init({
-    username: DataTypes.STRING,
-    password: DataTypes.STRING,
-    email: DataTypes.STRING,
+  room.init({
+    roomnumber: DataTypes.STRING,
+    image: DataTypes.STRING,
+    price: DataTypes.DECIMAL,
+    member: DataTypes.INTEGER,
+    description: DataTypes.STRING,
+    status: DataTypes.BOOLEAN,
     address: DataTypes.STRING,
-    phone: DataTypes.STRING,
-    roleId: {
-      type: DataTypes.INTEGER,
-      defaultValue: 0
-    }
+    acreage: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'user',
+    modelName: 'room',
   });
-  return User;
+  return room;
 };
+
+// Thiết lập khóa ngoại từ bảng Room đến bảng Area
+// room.belongsTo(area, { foreignKey: 'areaId' });

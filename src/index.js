@@ -1,11 +1,23 @@
-const path = require('path')
-const express = require('express')
-const morgan = require('morgan')
-const { engine } = require('express-handlebars')
-const route = require('./routes')
-const app = express()
+const path = require('path');
+const express = require('express');
+const morgan = require('morgan');
+const { engine } = require('express-handlebars');
+const route = require('./routes');
 require('dotenv').config();
 const connectDB = require('./app/config/connectDB');
+const session = require("express-session");
+const cors = require('cors');
+
+const app = express();
+app.use(cors());
+
+// session
+app.use(session({
+  secret: 'thuan2002',
+  resave: false,
+  saveUninitialized: true,
+}));
+
 
 // Port === undefined => port = 3000
 const port = process.env.PORT || 3000;
@@ -17,11 +29,12 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-// xử lý duữ liệu gửi từ javaScripts
+// xử lý dữ liệu gửi từ javaScripts
 app.use(express.json());
 
 // HTTP logger
 // app.use(morgan('combined'));
+
 
 // connect database
 connectDB();

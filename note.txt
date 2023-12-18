@@ -46,3 +46,6 @@ action sẽ chuyển đến tìm ở trang sản phẩm
 
 + migrations: tự động map vào database
 
+- mã hóa mật khẩu: thư viện bcryptjs
+
+

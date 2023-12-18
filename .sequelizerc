@@ -8,6 +8,8 @@ module.exports = {
 }
 
 // chạy câu lệnh sau để thực thi:  node_modules/.bin/sequelize init
+// node_modules/.bin/sequelize model:create --name User --attributes "email:string"
+// run: node_modules/.bin/sequelize db:migrate - map vào database
 
 //  npm install -g sequelize-cli   
 // npm install sequelize           

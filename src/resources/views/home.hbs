@@ -1,18 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-</head>
-<body>
-   
-    <h1> This is Home page</h1>
+  </head>
 
-    <h6>
-        {{data}}
-    </h6>
+  <body>
 
-</body>
+    {{#if username}}
+      <h1>
+        Welcome
+        <span style="color: red; font-style: italic;">{{username}}</span>
+        to Api web service</h1>
+      <div class="redirect">
+        <a href="/"><input type="button" value="Home" /></a>
+        <br />
+        <a href="logout"><input style="margin-top: 10px;" type="button" value="Logout" /></a><br />
+        <a href="productsList"><input style="margin-top: 10px;" type="button" value="Products" /></a><br />
+        <a href="/getRegister"><input style="margin-top: 10px;" type="button" value="Users" /></a>
+      </div>
+
+    {{else}}
+      <h1>you are not log in</h1>
+      <a href="login">Login</a>
+    {{/if}}
+
+  </body>
 </html>
