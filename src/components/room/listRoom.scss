@@ -1,0 +1,128 @@
+.container {
+    padding-top: 20px;
+    height: 100vh;
+    background: #eee;
+    .wrap {
+        .search {
+            .container-fluid {
+                .btn-search {
+                    width: 160px !important;
+                    background-color: #337ab7;
+                    color: #fff;
+                    .icon {
+                        padding-right: 5px !important;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .room-status {
+        color: #73879C;
+        font-weight: bold;
+        margin-top: 10px !important;
+    }
+    .add-room {
+        .btn {
+            background: #26B99A;
+            align-items: center;
+            .icon {
+                padding-right: 5px;
+                color: #fff;
+            }
+            .add{
+                color: #fff;
+                
+            }
+        }
+    }
+
+    .list-room {
+        .action {
+            margin-top: 10px !important;
+            .row {
+                .status {
+                    font-weight: bold;
+                    color: #73879C;
+                }
+                .chose {
+                    .btn {
+                        
+                        .icon {
+                            font-weight: bold;
+                            padding-right: 5px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .card {
+            width: 15rem;
+            .card-body {
+                .card-title {
+                    align-items: center;
+                    color: #73879C;
+                    .number {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                .add {
+                    color: #fff;
+                    background: #5bc0de;
+                    font-weight: 400;
+                    margin-top: 15px !important;
+                }
+                .name-custommer {
+                    align-items: center;
+                    margin-top: 15px !important;
+                    .icon {
+                        padding-right: 10px;
+                        color: #73879C;
+                    }
+                    .name {
+                        font-weight: bold !important;
+                    }
+                }
+                .price {
+                    margin-top: 15px !important;
+                    .icon {
+                        color: #73879c;
+                        padding-right: 10px;
+                    }
+                    .number {
+                        font-weight: bold;
+                        color: red;
+                    }
+                }
+                .actions {
+                    margin-top: 15px !important;
+                    .card-link {
+                        .edit {
+                            background: #337ab7;
+                            .icon {
+                                color: #fff;
+                                padding-right: 10px;
+                            }
+                            .edit {
+                                color: #fff;
+                            }
+                        }
+                        .remove {
+                            background: #d9534f;
+                            .icon {
+                                color: #fff;
+                                padding-right: 10px;
+                            }
+                            .remove {
+                                color: #fff;
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

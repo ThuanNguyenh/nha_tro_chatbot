@@ -1,0 +1,79 @@
+.all {
+    border: 1px solid #3d8bb3;
+    border-radius: 10px;
+    width: 355px;
+    .box-title{
+        background-color: #3d8bb3;
+        height: 45px;
+        text-align: start;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        color: #fff;
+        
+    }
+    .wrap {
+        background-color: #fff;
+        height: 350px;
+        width: 100%;
+       
+        padding-bottom: 10px;
+        overflow: auto;
+        position: relative;
+        .mes {
+            display: flex;
+            justify-content: start;
+            width: fit-content;
+            max-width: 70%;
+            height: fit-content;
+            background-color: #f6f8fa;
+            box-shadow: 1px 1px 10px 1px grey;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            padding: 3px 10px 3px 10px;
+        }
+        .rep {
+            display: flex;
+            justify-content: flex-end; /* Đặt rep nằm bên phải */
+            width: fit-content;
+            max-width: 70%;
+            height: fit-content;
+            background-color: #3d8bb3;
+            color: #fff;
+            box-shadow: 1px 1px 10px 1px grey;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: auto; /* Đặt margin-left thành auto để đẩy rep bên phải */
+            border-radius: 5px;
+            padding: 3px 10px 3px 10px;
+        }
+    }
+    .post {
+        width: 100%;
+        border-top: 1px solid #3d8bb3;
+        .text-post {
+            width: 85%;
+            border-bottom-left-radius: 10px;
+            border:none;
+            // box-shadow: 1px 1px 10px 1px grey;
+            padding: 10px;
+        }
+        .text-post:focus {
+            outline: none;
+        }
+        .sub-post {
+            width: 15%;
+            border-bottom-right-radius: 10px;
+            border: none;
+            background-color: #cfcbcb;
+            // box-shadow: 1px 1px 10px 1px rgb(215, 213, 213);
+            padding: 10px;
+            color: #fff;
+            .icon-2{
+                color: #3d8bb3;
+
+            }
+        }
+    }
+}

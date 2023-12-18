@@ -1,0 +1,15 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    padding-top: 15px;
+    background: #73879c;
+    ul {
+        list-style: none;
+        text-align: start;
+        padding-left: 0;
+        li {
+            padding-left: 20px;
+        }
+        
+    }
+}

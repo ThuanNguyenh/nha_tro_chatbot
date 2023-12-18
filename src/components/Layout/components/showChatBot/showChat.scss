@@ -1,0 +1,53 @@
+.chat {
+    position: fixed;
+    right: 0;
+    top: 78.5vh;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+    .box {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border-radius: 50px;
+        animation: shake 1s infinite;
+        display: flex; /* Đặt phần tử "box" thành một container flex */
+        justify-content: center; /* Căn chỉnh theo trục chính để icon nằm giữa */
+        align-items: center; /* Căn chỉnh theo trục phụ để icon nằm giữa */
+        .icon {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        
+        .icon-1 {
+            color: #fff;
+            top: 13px;
+            position: absolute;
+            right: 35px;
+            font-size: 20px;
+        }
+        
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px) rotate(5deg);
+        }
+        50% {
+            transform: translateX(5px) rotate(-5deg);
+        }
+        75% {
+            transform: translateX(-5px) rotate(5deg);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+.chat.open {
+    transform: translateY(-200%);
+}

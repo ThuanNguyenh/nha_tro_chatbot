@@ -1,0 +1,162 @@
+.box-content {
+    margin-top: 80px;
+    // height: 100vh;
+    // background-color: #3d8bb3;
+    .banner {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img-fluid {
+            width: 100vw;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .search {
+            position: absolute;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .form-control {
+                // width: 100% !important;
+                line-height: 2;
+                padding-left: 10px !important;
+                position: relative;
+                height: 60px;
+            }
+
+            .btn-search {
+                position: absolute;
+                right: 0;
+                margin-right: 6px !important;
+                width: 60px;
+                height: 50px;
+                line-height: 2;
+                border-radius: 5px;
+                border: none;
+                background-color: #3d8bb3;
+                .icon-search {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .link {
+        .txt-link {
+            color: #576982;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        .row {
+            .col {
+                color: #576982;
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .why {
+        // height: 30vh;
+        background: #f6f8fa;
+        border-radius: 10px;
+        .text-why {
+            padding-left: 65px;
+            padding-top: 45px;
+            padding-bottom: 20px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #576982;
+        }
+        .container {
+            height: fit-content;
+            background: none;
+            .row {
+                .col {
+                    .card {
+                        .card-body {
+                            color: #576982;
+                            .card-img-top {
+                                height: 200px;
+                                border-radius: 10px;
+                            }
+                            .card-title {
+                                .famessage {
+                                    color: #3d8bb3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .new-room {
+        .update {
+            .txt-1 {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #576982;
+            }
+        }
+        .container {
+            height: fit-content;
+            background: none;
+            .row {
+                .col {
+                    .card {
+                        background: none;
+                        .card-body {
+                            color: #576982;
+                            background-color: transparent;
+                            .card-img-top {
+                                border-radius: 10px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        background: #f6f8fa;
+        .row {
+            
+            .logo {
+                .navbar-brand {
+                    .icon {
+                        font-size: 2rem;
+                        color: #3d8bb3;
+                    }
+                    .logo-txt {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        .first {
+                            color: #3d8bb3;
+                        }
+                        .second {
+                            color: #576982;
+                        }
+                    }
+                }
+            }
+            .profile {
+                .link {
+                    .row{
+                        .col {
+                            font-weight: 600;
+                            .service {
+                                color: #3d8bb3;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

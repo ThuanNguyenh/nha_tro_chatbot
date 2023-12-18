@@ -1,0 +1,56 @@
+.navbar {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    // margin-top: 10px !important;
+    padding-bottom: 10px !important;
+
+    .container-fluid {
+        text-align: center !important;
+        .navbar-brand {
+            font-weight: 700;
+            color: #3d8bb3;
+            padding-left: 10px !important;
+        }
+        .logo-txt {
+            .second {
+                color: #576982;
+            }
+        }
+    }
+}
+
+.account {
+    
+    .dropdown {
+        button {
+            background: #3d8bb3;
+            border: none;
+            color: #fff;
+            padding-left: 20px !important;
+            border-radius: 5px;
+        }
+        .dropdown-menu {
+            text-align: center;
+            .manager {
+                color: black;
+            }
+            .btn-out {
+                width: 100%;
+                background: none;
+                color: black;
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+
+.noUser {
+    .btn-log {
+        background: #3d8bb3 !important;
+        border-radius: 5px;
+        height: 40px;
+        width: 100px;
+        border: none;
+        color: #fff;
+        padding-left: 5px !important;
+    }
+}

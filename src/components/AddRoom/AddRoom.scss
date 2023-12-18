@@ -1,0 +1,104 @@
+.container {
+    .first {
+        .row {
+            align-items: center;
+            .text {
+                font-size: 20px;
+                font-weight: 600;
+                color: #73879c;
+            }
+            .button {
+                .back {
+                    .b-back {
+                        background: #f0ad4e;
+                        color: #fff;
+                    }
+                }
+                .save {
+                    .b-save {
+                        background: #337ab7;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        margin-top: 15px !important;
+    }
+    .form-add-room {
+        margin-top: 15px !important;
+    }
+    form {
+        
+        .one {
+            .room-number {
+                .number {
+                    align-items: center;
+                    label {
+                        font-weight: 600;
+                        color: #73879c;
+                    }
+                }
+            }
+            .house {
+                .action {
+                    align-items: center;
+                    label {
+                        font-weight: 600;
+                        color: #73879c;
+                    }
+                }
+            }
+        }
+
+        .two {
+            .price {
+                .number {
+                    .input-group {
+                        align-items: center;
+                        label {
+                            font-weight: 600;
+                            color: #73879c;
+                        }
+                        input {
+                            border-radius: 5px 0px 0px 5px !important;
+                        }
+                        textarea {
+                            border-radius: 5px !important;
+                        }
+                       
+                    }
+                }
+            }
+            .person {
+                .number {
+                    .input-group {
+                        align-items: center;
+                        .form-label {
+                            font-weight: 600;
+                            color: #73879c;
+                        }
+                        input {
+                            border-radius: 5px 0px 0px 5px !important;
+                        }
+                        .file{
+                            border-radius: 5px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .two {
+            .price {
+                .number {
+                    .input-group {
+                        .form-control{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
